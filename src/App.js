@@ -10,7 +10,8 @@ function App() {
     <div>
       <Router>
         <Navigation />
-         <Route path={'/:type'}>
+        {/*type param will be optional*/}
+         <Route path={'/:type?'}>
           <HomePage />
         </Route>
       </Router>
