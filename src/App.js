@@ -14,7 +14,7 @@ function App() {
         <Route path={"/:type/:id"}>
           <PetDetailsPage />
         </Route>
-        {/*type param will be optional*/}
+        {/* type param will be optional so we add ? question mark */}
          <Route path={'/:type?'}>
           <HomePage />
         </Route>
