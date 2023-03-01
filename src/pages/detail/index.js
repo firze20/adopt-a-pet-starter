@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 import { getPetDetails } from '../../api/petfinder';
 import Hero from '../../components/hero';
 
@@ -31,6 +31,7 @@ const PetDetailsPage = () => {
       ) : error ? (
         <div>
           {/* Redirect to /pet-details-not-found if there was an error! */}
+          <Redirect to={"/pet-details-not-found"} />
         </div>
       ) : (
         <main>
